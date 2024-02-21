@@ -1,0 +1,129 @@
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+body{
+    /*background-color: aqua;*/
+    margin: 0;
+    background-image:url(./images/bg-desktop.svg);
+    background-size: cover;
+}
+h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 42px;
+    color: var(--Violet);
+}
+p{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    padding: 48px;
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    margin-top: 90px;
+}
+.principal-img img{
+    width: 800px;
+}
+.content{
+    padding-top: 24px;
+    padding-inline: 40px;
+}
+.register-button{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    background-color: white;
+    border-radius: 24px;
+    border: 1px solid var(--Soft-Magenta);
+    color: var(--Violet);
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    box-shadow: 10px 8px 10px rgba(0,0,0,0.1);
+    margin-top: 10px;
+    /* font-size: var(--md); */
+}
+.register-button:hover{
+    background-color: var(--Soft-Magenta);
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+.icons{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+.icons img{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+.icons a img:hover{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    filter: invert(82%) sepia(28%) saturate(4798%) hue-rotate(237deg) brightness(96%) contrast(89%);
+    transition: all 0.3s ease-in-out;
+}
+.attribution { 
+    width: 100%;
+    font-size: 11px; 
+    text-align: center;
+    position: relative;
+    bottom: 10px; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+@media (max-width: 375px) {
+    body{
+        margin: 0;
+        background-image:url(./images/bg-mobile.svg);
+        background-size: cover;
+    }
+    h1{
+        font-weight: 600;
+        font-size: 24px;
+        color: var(--Violet);
+    }
+    p{
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+    }
+    .logo img{
+        width: 120px;
+    }
+    .container{
+        padding: 30px 24px 0 24px;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        margin-top: 42px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .principal-img img{
+        width: 100%;
+    }
+    .content{
+        padding-top: 24px;
+        padding-inline: 14px;
+    }
+    .icons{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 34px;
+    }
+}
