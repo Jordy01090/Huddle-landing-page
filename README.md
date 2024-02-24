@@ -15,7 +15,7 @@ This is a design layout for the [Huddle landing page with single introductory se
 
 ![](./images/Solution.png)
 
-
+- Live Site URL: [live site here](https://jordy01090.github.io/Huddle-landing-page/)
 
 ## My process
 
